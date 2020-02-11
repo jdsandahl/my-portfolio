@@ -15,6 +15,11 @@ footer{
     float: left;
 }
 
+.social img{
+    width: 32px;
+    height: 32px;
+}
+
 a {
     text-decoration: none;
 }
