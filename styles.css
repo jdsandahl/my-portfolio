@@ -2,11 +2,19 @@ h1 {
     color: red;
 }
 
-li {
-    list-style-type: none;
+nav{
     float: right;
+}
+
+nav li{
+    list-style-type: none;
+    float: left;
 }
 
 footer{
     float: left;
+}
+
+a {
+    text-decoration: none;
 }
