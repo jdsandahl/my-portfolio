@@ -8,6 +8,11 @@ h1 {
     color: red;
 }
 
+button {
+    width:100%;
+    height:100%;
+}
+
 /*End - general formatting*/
 /*Start - Boarder Formatting*/
 
@@ -27,7 +32,7 @@ header{
 }/*Flex container*/
 
 header section{
-    flex: 1 0 auto;
+    flex: 4 0 auto;
 }
 
 header nav{
@@ -41,10 +46,12 @@ nav ul{
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    height: 100%;
+    align-items: center;
 }/*flex container*/
 
 nav li{
-    flex: 1 1 auto;
+    flex: 1 1 0;
 }
 
 /*End - Header Flex-box Layout*/
