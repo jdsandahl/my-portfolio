@@ -13,6 +13,11 @@ button {
     height:100%;
 }
 
+.social img{
+    width: 32px;
+    height: 32px;
+}
+
 /*End - general formatting*/
 /*Start - Boarder Formatting*/
 
@@ -29,6 +34,7 @@ footer section {border:1px solid black;}
 
 header{
     display: flex;
+    flex-wrap: wrap;
 }/*Flex container*/
 
 header section{
@@ -43,7 +49,7 @@ header nav{
 nav ul{
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0px;
     display: flex;
     flex-wrap: wrap;
     height: 100%;
@@ -55,12 +61,23 @@ nav li{
 }
 
 /*End - Header Flex-box Layout*/
-
+/*Star - Footer Flex-box Layout*/
 footer{
-    float: left;
+    display: flex;
+    justify-content: flex-end;
+}/*Flex container*/
+
+footer section{
+    margin: 0px;
+    padding:0px;
+    display: flex;
+    height:100%;
+    align-items: center;
 }
 
-.social img{
-    width: 32px;
-    height: 32px;
+.social a{
+    padding:5px;
+    flex: 1 1 auto;
 }
+
+/*End - Footer Flex-box Layout*/
