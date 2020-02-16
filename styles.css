@@ -1,9 +1,33 @@
-header{
-    display: flex;
+/*Start - general formatting*/
+
+a {
+    text-decoration: none;
 }
 
+h1 {
+    color: red;
+}
+
+/*End - general formatting*/
+/*Start - Boarder Formatting*/
+
+header {border:1px solid black;}
+header section {border:1px solid black;}
+header nav {border:1px solid black;}
+nav ul {border:1px solid black;}
+main {border:1px solid black;}
+footer {border:1px solid black;}
+footer section {border:1px solid black;}
+
+/*End - Boarder Formatting*/
+/*Start - Header Flex-box Layout*/
+
+header{
+    display: flex;
+}/*Flex container*/
+
 header section{
-    flex: 1 1 auto;
+    flex: 1 0 auto;
 }
 
 header nav{
@@ -11,22 +35,19 @@ header nav{
 }
 
 
-nav{
-    float: right;
-}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}/*flex container*/
 
 nav li{
-    list-style-type: none;
-    float: left;
+    flex: 1 1 auto;
 }
 
-nav a {
-    text-decoration: none;
-}
-
-h1 {
-    color: red;
-}
+/*End - Header Flex-box Layout*/
 
 footer{
     float: left;
