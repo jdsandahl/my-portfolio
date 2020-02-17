@@ -16,8 +16,7 @@ h1 {
 }
 
 button {
-    width:75px;
-    height:100%;
+    width:100%;
 }
 
 .social img{
@@ -53,8 +52,9 @@ footer {
 /*Start - Boarder Formatting*/
 
 header {border:1px solid black;}
-nav {border:1px solid black;}
-nav ul {border:1px solid black;}
+.flex-nav {border:1px solid black;}
+.flex-nav ul {border:1px solid black;}
+.flex-main {border:1px solid black;}
 main {border:1px solid black;}
 aside {border:1px solid black;}
 footer {border:1px solid black;}
@@ -83,18 +83,25 @@ footer section {border:1px solid black;}
     list-style: none;
     margin: 0;
     padding: 0px;
+    min-width: 80%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
 
-main{
+.flex-main .flex-col{
+    min-height: 300px;
+}
+
+.flex-main main{
     flex: 2 2 auto;
 }
 
-aside{
+.flex-main aside{
     flex: 1 1 auto;
 }
+
+
 /*End - Header Flex-box Layout*/
 /*Star - Footer Flex-box Layout*/
 footer{
