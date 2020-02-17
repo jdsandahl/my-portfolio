@@ -1,0 +1,118 @@
+/*Start - general formatting*/
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: red;
+}
+
+button {
+    width:75px;
+    height:100%;
+}
+
+.social img{
+    width: 32px;
+    height: 32px;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+main {
+    text-align: left;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+aside {
+    text-align: center;
+    padding: 20px;
+    margin: 0 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+/*End - general formatting*/
+
+/*Start - Boarder Formatting*/
+
+header {border:1px solid black;}
+nav {border:1px solid black;}
+nav ul {border:1px solid black;}
+main {border:1px solid black;}
+aside {border:1px solid black;}
+footer {border:1px solid black;}
+footer section {border:1px solid black;}
+
+/*End - Boarder Formatting*/
+
+
+/* Start flex container*/
+.flex-nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    align-items: center;
+}
+
+/*Flex items*/
+.flex-nav li{
+    flex: 1 1 0;
+}
+
+.flex-main{
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+main{
+    flex: 2 2 auto;
+}
+
+aside{
+    flex: 1 1 auto;
+}
+/*End - Header Flex-box Layout*/
+/*Star - Footer Flex-box Layout*/
+footer{
+    display: flex;
+    justify-content: flex-end;
+}/*Flex container*/
+
+footer section{
+    margin: 0px;
+    padding:0px;
+    display: flex;
+    height:100%;
+    align-items: center;
+}
+
+.social a{
+    padding:5px;
+    flex: 1 1 auto;
+}
+
+/*End - Footer Flex-box Layout*/
