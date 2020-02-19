@@ -14,9 +14,11 @@ body{
 }
 
 a {
+    font-family: 'Bebas Neue', 'sans serif';
+    font-size: 14px; 
     color:silver;
-    font-weight: 500;
-    letter-spacing: 2px;
+    font-weight: 700;
+    letter-spacing: 5px;
     text-decoration: none;
     padding:20px 5px;
     display: inline-block;
@@ -27,12 +29,18 @@ a {
 
 
 h1 {
-    color: #2b2e34;
+    font-family: 'Bebas Neue', 'sans serif';
+    color: #2e2d2c;
+}
+
+h2 {
+    font-family: 'Bebas Neue', 'sans serif';
+    color: #2b2d2c; 
 }
 
 button {
     width:100%;
-    background: #2b2e34;
+    background: #2e2d2c;
 }
 
 /*.profile-photo{
@@ -55,6 +63,7 @@ button {
     border:3px solid white;
     border-radius: 3%;
     box-shadow: 3px 3px 2px 2px #666666;
+    float: right;
 }
 
 .wrapper {
@@ -65,13 +74,13 @@ button {
 main {
     text-align: left;
     padding: 20px;
-    margin: 20px 0;
+    margin: 0px 0;
 }
 
 .mainText {
     width: auto;
     min-width: 150px;
-    height: 30vh;
+    min-height: 40vh;
     border:3px solid white;
     border-radius: 3%;
     box-shadow: 3px 3px 2px 2px #666666;
@@ -86,12 +95,12 @@ aside {
 footer {
     text-align: center;
     padding: 20px;
-    margin: 10px 0;
+    margin: 25px 0;
 }
 
 /*End - general formatting*/
 
-/*Start - Boarder Formatting*/
+/*Start - Boarder Formatting*
 
 header {border:1px solid black;}
 .flex-nav {border:1px solid black;}
@@ -123,12 +132,14 @@ footer section {border:1px solid black;}
 
 .flex-main{
     list-style: none;
-    margin: 0;
+    margin: 25px 0;
     padding: 0px;
     min-width: 80%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    border:2px solid #2e2d2c;
+    background-image: linear-gradient(260deg, #7e7c7d 0%, white 100%);
 }
 
 .flex-main .flex-col{
@@ -149,6 +160,8 @@ footer section {border:1px solid black;}
 footer{
     display: flex;
     justify-content: flex-end;
+    border:2px solid #2e2d2c;
+    background-image: linear-gradient(260deg, #7e7c7d 0%, white 100%);
 }/*Flex container*/
 
 footer section{
