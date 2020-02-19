@@ -35,14 +35,26 @@ button {
     background: #2b2e34;
 }
 
-.profile-photo{
+/*.profile-photo{
     height:252px;
     width:180px;
-}
+}*/
 
 .social img{
     width: 32px;
     height: 32px;
+}
+
+.profile-photo {
+    max-width: 100%;
+    min-width:180px !important;
+    display: block;
+    text-align:center;
+    height: auto;
+    max-height: 40vh;
+    border:3px solid white;
+    border-radius: 3%;
+    box-shadow: 3px 3px 2px 2px #666666;
 }
 
 .wrapper {
@@ -56,8 +68,17 @@ main {
     margin: 20px 0;
 }
 
+.mainText {
+    width: auto;
+    min-width: 150px;
+    height: 30vh;
+    border:3px solid white;
+    border-radius: 3%;
+    box-shadow: 3px 3px 2px 2px #666666;
+    background: #f0f1f1;
+}
+
 aside {
-    text-align: center;
     padding: 20px;
     margin: 0 0;
 }
@@ -70,7 +91,7 @@ footer {
 
 /*End - general formatting*/
 
-/*Start - Boarder Formatting*
+/*Start - Boarder Formatting*/
 
 header {border:1px solid black;}
 .flex-nav {border:1px solid black;}
@@ -111,7 +132,7 @@ footer section {border:1px solid black;}
 }
 
 .flex-main .flex-col{
-    min-height: 350px;
+    min-height: 300px;
 }
 
 .flex-main main{
