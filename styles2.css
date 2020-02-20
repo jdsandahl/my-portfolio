@@ -63,8 +63,8 @@ button {
     height: auto;
     max-height: 40vh;
     border:3px solid white;
-    border-radius: 3%;
-    box-shadow: 3px 3px 2px 2px #666666;
+    border-radius: 1%;
+    box-shadow: 2px 2px 2px 2px #666666;
     float: right;
 }
 
@@ -80,9 +80,14 @@ main {
     min-height: 40vh;
     border:3px solid white;
     padding: 10px;
-    border-radius: 3%;
-    box-shadow: 3px 3px 2px 2px #666666;
-    background: #f0f1f1;
+    border-radius: 1%;
+    box-shadow: 2px 2px 2px 2px #666666;
+    background: #f0f1f188;
+}
+
+.contactForm{
+    background: #2e2d2c;
+    border-radius: 1%;
 }
 
 aside {
@@ -117,9 +122,10 @@ footer section {border:1px solid black;}
     list-style: none;
     margin: 0;
     padding: 0px;
+    height: 100%;
+    
     display: flex;
     flex-wrap: wrap;
-    height: 100%;
     align-items: center;
 }
 
@@ -133,11 +139,12 @@ footer section {border:1px solid black;}
     margin: 25px 0;
     padding: 0px;
     min-width: 80%;
+    /*border:2px solid #2e2d2c;
+    background-image: linear-gradient(260deg, #7e7c7d 0%, white 100%);
+    */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    border:2px solid #2e2d2c;
-    background-image: linear-gradient(260deg, #7e7c7d 0%, white 100%);
 }
 
 .flex-main .flex-col{
@@ -152,27 +159,27 @@ footer section {border:1px solid black;}
     flex: 1 1 0;
 }
 
-
-/*End - Header Flex-box Layout*/
-/*Star - Footer Flex-box Layout*/
 footer{
+    /*border:2px solid #2e2d2c;*/
+    background-image: linear-gradient(460deg, #7e7c7d 0%, white 100%);
+ 
     display: flex;
     justify-content: flex-end;
-    border:2px solid #2e2d2c;
-    background-image: linear-gradient(260deg, #7e7c7d 0%, white 100%);
 }/*Flex container*/
 
 footer section{
     margin: 0px;
     padding:0px;
-    display: flex;
     height:100%;
+
+    display: flex;
     align-items: center;
 }
 
 .social a{
     padding:5px;
-    flex: 1 1 auto;
+
+    flex: 1 1 0;
 }
 
 /*End - Footer Flex-box Layout*/
