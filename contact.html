@@ -45,18 +45,18 @@
                     <p>
                         A place to put a contact form...
                     </p>
-                    <Form class="mainText contactForm" action="#" method="post">
+                    <Form id="myForm" class="mainText contactForm" action="#" method="post" >
                         <ul>
                             <li>
-                                <label for="name">Name:</label>
+                                <label for="name">Name:<abbr title="required" aria-label="required">*</abbr></label>
                                 <input type="text" id="name" name="user_name">
                             </li>
                             <li>
-                                <label for="mail">Email:</label>
+                                <label for="mail">Email:<abbr title="required" aria-label="required">*</abbr></label>
                                 <input type="email" id="mail" name="user_mail">
                             </li>
                             <li>
-                                <label for="msg">Message:</label>
+                                <label for="msg">Message:<abbr title="required" aria-label="required">*</abbr></label>
                                 <textarea id="msg" name="user_message"></textarea>
                             </li>
                             <li class="button">
@@ -84,5 +84,30 @@
             </section><!--end social links-->
         </footer>
     </div>
+
+    <script>
+        
+        const newForm = document.getElementById("myForm");       
+
+        newForm.addEventListener("submit", NewSubmission);
+        newForm.addEventListener("reset", ConfirmReset);
+
+        function NewSubmission(){
+            /*alert('working');*/          
+            window.open('','formConfirmation', 'width=400, height=400, resizable,scrollbars');
+            form.target = 'formConfirmation';
+
+            const newName = oForm.elements("user_name").value;
+            const newEmail = oForm.elements("user_mail").value;
+            const newMessage = oForm.elements("user_message").value;
+
+        }
+
+        function ConfirmReset(){
+            alert('working');
+        }
+
+
+    </script>
 </body>
 </html>
