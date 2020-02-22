@@ -93,14 +93,15 @@
         newForm.addEventListener("reset", ConfirmReset);
 
         function NewSubmission(){
-            /*alert('working');*/          
+            const newName = document.getElementById("name").value;
+            const newEmail = document.getElementById("mail").value;
+            const newMessage = document.getElementById("msg").value;
+            
+            alert(newName + "," + newEmail + "," + newMessage);
+
+            /*alert('working');         
             window.open('','formConfirmation', 'width=400, height=400, resizable,scrollbars');
-            form.target = 'formConfirmation';
-
-            const newName = oForm.elements("user_name").value;
-            const newEmail = oForm.elements("user_mail").value;
-            const newMessage = oForm.elements("user_message").value;
-
+            form.target = 'formConfirmation';*/
         }
 
         function ConfirmReset(){
