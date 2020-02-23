@@ -20,7 +20,7 @@ body{
     margin: 0 auto;
 }
 
-a {
+nav a {
     font-family: 'Bebas Neue', 'sans serif';
     font-size: 14px; 
     color:silver;
@@ -34,7 +34,7 @@ a {
     transition:all 0.5s;
 }
 
-a:hover{
+nav a:hover{
     color: #2e2d2c;
 }
 
@@ -42,6 +42,12 @@ a:hover{
 h1, h2 {
     font-family: 'Bebas Neue', 'sans serif';
     color: #2e2d2c;
+    letter-spacing: 1px;
+}
+
+h1 a {
+    color: #2e2d2c;
+    text-decoration: none;
 }
 
 button {
