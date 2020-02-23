@@ -60,10 +60,10 @@
                                 <textarea id="msg" name="user_message"></textarea>
                             </li>
                             <li class="button">
-                                <button class="form_button" type="submit">Send your message</button>
+                                <button id="btnSubmit" class="form_button" type="button">Send your message</button>
                             </li>
                             <li class="button">
-                                <button class="form_button" type="reset">Clear Form</button>
+                                <button id="btnReset" class="form_button" type="button">Clear Form</button>
                             </li>                            
                         </ul>
                     </Form>
@@ -89,8 +89,11 @@
         
         const newForm = document.getElementById("myForm");       
 
-        newForm.addEventListener("submit", NewSubmission);
-        newForm.addEventListener("reset", ConfirmReset);
+        const submitClicked = document.getElementById("btnSubmit");       
+        const resetClicked = document.getElementById("btnReset"); 
+
+        submitClicked.addEventListener("click", NewSubmission);
+        resetClicked.addEventListener("click", ConfirmReset);
 
         function NewSubmission(){
             const newName = document.getElementById("name").value;
@@ -98,13 +101,14 @@
             const newMessage = document.getElementById("msg").value;
             
             alert(newName + "," + newEmail + "," + newMessage);
-
+            newForm.submit();
             /*alert('working');         
             window.open('','formConfirmation', 'width=400, height=400, resizable,scrollbars');
             form.target = 'formConfirmation';*/
         }
 
         function ConfirmReset(){
+            newForm.reset();
             alert('working');
         }
 
