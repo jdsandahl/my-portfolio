@@ -100,16 +100,25 @@
             const newEmail = document.getElementById("mail").value;
             const newMessage = document.getElementById("msg").value;
             
-            alert(newName + "," + newEmail + "," + newMessage);
-            newForm.submit();
-            /*alert('working');         
-            window.open('','formConfirmation', 'width=400, height=400, resizable,scrollbars');
-            form.target = 'formConfirmation';*/
+            if (newName == "" || newEmail == "" || newMessage == ""){
+                alert("Please complete all fields");
+                return false;
+            } else {
+                alert(newName + "," + newEmail + "," + newMessage);
+                newForm.submit();
+
+                /*window.open('','formConfirmation', 'width=400, height=400, resizable,scrollbars');
+                form.target = 'formConfirmation';*/
+            }
         }
 
         function ConfirmReset(){
-            newForm.reset();
-            alert('Form reset');
+            if (confirm("Do you want to start over?")){
+                newForm.reset();
+                alert('Form reset');
+            }else {
+                return false;
+            }
         }
 
 
