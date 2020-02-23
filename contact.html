@@ -49,15 +49,15 @@
                         <ul>
                             <li>
                                 <label for="name">Name:<abbr title="required" aria-label="required">*</abbr></label>
-                                <input type="text" id="name" name="user_name">
+                                <input type="text" id="name" name="user_name" required>
                             </li>
                             <li>
                                 <label for="mail">Email:<abbr title="required" aria-label="required">*</abbr></label>
-                                <input type="email" id="mail" name="user_mail">
+                                <input type="email" id="mail" name="user_mail" required>
                             </li>
                             <li>
                                 <label for="msg">Message:<abbr title="required" aria-label="required">*</abbr></label>
-                                <textarea id="msg" name="user_message"></textarea>
+                                <textarea id="msg" name="user_message" required></textarea>
                             </li>
                             <li class="button">
                                 <button id="btnSubmit" class="form_button" type="button">Send your message</button>
@@ -109,7 +109,7 @@
 
         function ConfirmReset(){
             newForm.reset();
-            alert('working');
+            alert('Form reset');
         }
 
 
