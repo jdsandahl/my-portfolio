@@ -15,7 +15,7 @@ function NewSubmission(){
         alert("Please complete all fields");
         return false;
     } else {
-        alert(newName + "," + newEmail + "," + newMessage);
+        alert(newName + ", " + newEmail + ", " + newMessage);
         newForm.submit();
 
         /*window.open('','formConfirmation', 'width=400, height=400, resizable,scrollbars');
