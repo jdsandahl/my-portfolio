@@ -256,7 +256,6 @@ footer section{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     grid-gap: 30px;
-    background:#2e2d2c;
 }
 
 .project-container a {
@@ -268,8 +267,8 @@ footer section{
     grid-template-rows: max-content 200px 1fr;
     padding: 10px;
     justify-content: center;
-    color: white;
-    background: grey;
+    color: silver;
+    background: #2e2d2c;
     box-shadow: 2px 2px 2px 2px #2e2d2c;
     border-radius: 10%;
     margin: 10px;
