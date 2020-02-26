@@ -94,6 +94,10 @@ main {
     background: #f0f1f188;
 }
 
+.haiku{
+    list-style: none;
+}
+
 aside {
     padding: 20px;
     margin: 0 0;
