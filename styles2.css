@@ -255,6 +255,10 @@ footer section{
     background:#2e2d2c;
 }
 
+.project-container a {
+    text-decoration: none;
+}
+
 .project-card{
     display: grid;
     grid-template-rows: max-content 200px 1fr;
